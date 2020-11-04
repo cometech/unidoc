@@ -617,11 +617,11 @@ func (this *PdfWriter) Encrypt(userPass, ownerPass []byte, options *EncryptOptio
 func (this *PdfWriter) Write(ws io.WriteSeeker) error {
 	common.Log.Trace("Write()")
 
-	lk := license.GetLicenseKey()
-	if lk == nil || !lk.IsLicensed() {
-		fmt.Printf("Unlicensed copy of unidoc\n")
-		fmt.Printf("To get rid of the watermark - Please get a license on https://unidoc.io\n")
-	}
+	//lk := license.GetLicenseKey()
+	//if lk == nil || !lk.IsLicensed() {
+	//	fmt.Printf("Unlicensed copy of unidoc\n")
+	//	fmt.Printf("To get rid of the watermark - Please get a license on https://unidoc.io\n")
+	//}	
 
 	// Outlines.
 	if this.outlineTree != nil {
