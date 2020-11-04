@@ -368,7 +368,7 @@ func procPage(p *PdfPage) {
 	ops = append(ops, "/UF1 14 Tf")
 	ops = append(ops, "1 0 0 rg")
 	ops = append(ops, "10 10 Td")
-	s := "Unlicensed UniDoc - Get a license on https://unidoc.io"
+	s := ""//Unlicensed UniDoc - Get a license on https://unidoc.io"
 	ops = append(ops, fmt.Sprintf("(%s) Tj", s))
 	ops = append(ops, "ET")
 	ops = append(ops, "Q")
